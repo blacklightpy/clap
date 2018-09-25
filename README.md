@@ -2,7 +2,7 @@
 A CLI based music player for Windows built as part of CBSE XIIth grade project work in C++ w/ Code::Blocks 17.10 IDE
 
 # Introduction
-This project was done as part of CBSE project work for XIIth grade. The standard is C++17.
+This project was done as part of CBSE project work for XIIth grade. The standard is C++17. The primary focus of the project was not limited to creating a music player, but was also towards utilizing the various features of the programming language and thereby gaining a good exposure with it.
 
 This is a CLI based program which can play and manage WAVE files (others are either propreitary or use complex encoding, so we did not support them since this is a school project).
 
