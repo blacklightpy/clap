@@ -94,6 +94,23 @@ Windows API uses certain typedefs to ensure code portability across processor ar
 
 You can get more information about such typedefs at [MSDN](https://docs.microsoft.com/en-us/windows/desktop/WinProg/windows-data-types)
 
+# Screenshots
+
+## Menu
+![Menu](https://i.ibb.co/7ty4ndm/image.png)
+## All Songs
+![All Songs](https://i.ibb.co/bvJ4B54/image.png)
+## track Info
+![Track Info](https://i.ibb.co/HKbLGQM/image.png)
+## Now Playing
+![Now Playing](https://i.ibb.co/nLHHKBb/image.png)
+## Paused
+![Paused](https://i.ibb.co/H4MjNGk/image.png)
+## About
+![About](https://i.ibb.co/5Fvq2ZK/image.png)
+## Log File
+![Log File](https://i.ibb.co/sQTpp2J/image.png)
+
 # Conclusion
 
 The Source code of the program was compiled successfully rectifying all errors. The program will run successfully. The whole program is menu driven and is user friendly. This program is developed as easy as possible for the sake of the user.
