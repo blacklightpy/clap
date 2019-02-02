@@ -96,19 +96,25 @@ You can get more information about such typedefs at [MSDN](https://docs.microsof
 
 # Screenshots
 
-## Menu
+### Menu
 ![Menu](https://i.ibb.co/7ty4ndm/image.png)
-## All Songs
+
+### All Songs
 ![All Songs](https://i.ibb.co/bvJ4B54/image.png)
-## track Info
+
+### Track Info
 ![Track Info](https://i.ibb.co/HKbLGQM/image.png)
-## Now Playing
+
+### Now Playing
 ![Now Playing](https://i.ibb.co/nLHHKBb/image.png)
-## Paused
+
+### Paused
 ![Paused](https://i.ibb.co/H4MjNGk/image.png)
-## About
+
+### About
 ![About](https://i.ibb.co/5Fvq2ZK/image.png)
-## Log File
+
+### Log File
 ![Log File](https://i.ibb.co/sQTpp2J/image.png)
 
 # Conclusion
