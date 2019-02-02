@@ -34,17 +34,17 @@ Moving to the technicals, WAVE files are stored in RIFF format which has the fol
 Here, one can observe that the file is divides into various sections. They are called chunks. The first chunk is the header. All other chunks are subchunks of this chunk, which is called RIFF chunk.
 The general structure of a subchunk is
  
-'''
+```
 struct subChunk
 {
     FOURCC ChunkID;
     DWORD ChunkSize;
     LPBYTE Data;
 };
-'''
+```
 
 Major chunks like RIFF and LIST chunks have the form:
-'''
+```
 struct Chunk
 {
     FOURCC ChunkID;
@@ -55,7 +55,7 @@ struct Chunk
         LPBYTE ChunkData;
     };
 };
-'''
+```
 FOURCC refers to the four-character hex-code of the Chunk ID in ASCII stored in little-endian form
  
 The chunk type of the RIFF chunk in WAVE file is “WAVE”. The first subchunk is the “fmt” subchunk, which stores the file details such as SampleRate, ByteRate, Number of Channels, Bits per second etc.
