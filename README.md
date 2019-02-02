@@ -30,7 +30,7 @@ We also created a data structure similar to std::deque to store the play queue (
 The WAVE format was developed by the Microsoft and IBM in the 1980s. This audio format is capable of storing audio in uncompressed format and compressed formats too. WAVE files are stored in chunks based file format called **RIFF** (Resource interchange File Format). The container is (.wav). Linear PCM (Linear Pulse Code Modulation) form is the most straightforward way of storing digital audio, as the notes are directly stored without any form of encoding. Other popular formats of digital audio include FLAC (Free and Lossless Audio Codec), ALAC (Apple Lossless Audio Codec), MP3, AAC etc. WAVE, FLAC and ALAC are lossless audio formats capable of storing CD Quality audio without loss digitally, whereas MP3 (deprecated), AAC etc. are lossy formats. This program demonstrates playback of L-PCM Wave files only.
 
 For example, MP3 at 320Kbps has a loss of 78% of audio compared to uncompressed WAVE files. But WAVE files have a huge size because of storing CDQ Audio in an un-compressed form, which is the very reason why FLAC was developed. Typical CDQ Audio files have a bit rate of 1441Kbps. This is because CDQ Audio has a sample rate of 44.1 KHz, 16 Bits per Second and 2 Channels (left & right) which gives 
-> **2 x 16 x 44,100 = 1,411,200 bits per second (bps),*** ***or approximately 1411 kbps***
+> *2 x 16 x 44,100 = 1,411,200 bits per second (bps),* ***or approximately 1411 kbps***
 
 Moving to the technicals, WAVE files are stored in RIFF format which has the following structure
 
