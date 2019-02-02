@@ -30,6 +30,8 @@ We also created a data structure similar to std::deque to store the play queue (
 The WAVE format was developed by the Microsoft and IBM in the 1980s. This audio format is capable of storing audio in uncompressed format and compressed formats too. WAVE files are stored in chunks based file format called RIFF (Resource interchange File Format). The container is (.wav). Audiophiles generally prefer a variant of WAVE files called Linear PCM (Linear Pulse Code Modulated) form, which is the most straightforward way of storing digital audio. Other popular formats of digital audio include FLAC (Free and Lossless Audio Codec), ALAC (Apple Lossless Audio Codec), MP3, AAC etc. WAVE, FLAC and ALAC are lossless audio formats capable of storing CD Quality audio without loss digitally, whereas MP3 (deprecated), AAC etc. are lossy formats. E.g.: MP3 at 320Kbps has a loss of 78% of audio compared to uncompressed WAVE files. But WAVE files have a huge size because of storing CDQ Audio in an un-compressed form, which is the very reason why FLAC was developed. Typical CDQ Audio files have a bit rate of 1441Kbps. This is because CDQ Audio has Sample Rate 441000Hz, 16 Bits per Second and 2 Channels (left & right) which gives Kbps
 
 Moving to the technicals, WAVE files are stored in RIFF format which has the following structure
+
+![Waveform Structure](https://i.ibb.co/c6L7JLv/image.png)
  
 Here, one can observe that the file is divides into various sections. They are called chunks. The first chunk is the header. All other chunks are subchunks of this chunk, which is called RIFF chunk.
 The general structure of a subchunk is
@@ -57,7 +59,9 @@ struct Chunk
 };
 ```
 FOURCC refers to the four-character hex-code of the Chunk ID in ASCII stored in little-endian form
- 
+
+![RIFF Chunk](https://i.ibb.co/YfmzdTx/image.png)
+
 The chunk type of the RIFF chunk in WAVE file is “WAVE”. The first subchunk is the “fmt” subchunk, which stores the file details such as SampleRate, ByteRate, Number of Channels, Bits per second etc.
 The next chunk stores the audio data in the form of coordinates of the sound wave in hex code for each channels. Then there is an optional chunk called LIST chunk, which is a major chunk (still inside RIFF chunk) which stores audio metadata. People generally say WAVE files cannot be tagged, but there actually is this chunk which allows tagging. Also, recently the ID3v1 tagging format which is used for MP3 format was made available to other audio formats including WAVE. While LIST/INFO tags can store metadata only in text form and only up to around 30 characters per tag, which are also only a few (20-30) tags, ID3v1 can hold around 100s of tags and album art too. LIST chunks with type “INFO” are the ones that hold metadata. In the data part of the LIST/INFO chunk, there are many sub chunks holding audio metadata. Some are:
 * **INAM**  *Title*
