@@ -83,11 +83,12 @@ Audio playback is done by the player class with the help of ***winmm.dll*** plug
 
 Windows API uses certain typedefs to ensure code portability across processor architectures. Some of them used in this program are
 
-|**WORD**|int with 2 bytes (short OR uint16_t)|
-|**DWORD**|double WORD OR int with 4 bytes (uint32_t)|
-|**BYTE**|unsigned char|
-|**LPBYTE**|BYTE *|
-|**BOOL**|bool|
-|**DWORD_PTR**|DWORD ******|
+|Windows Data Type  |***typedef***                                 |                                   
+|**WORD**           |int with 2 bytes (short **OR** uint16_t)      |
+|**DWORD**          |double WORD **OR** int with 4 bytes (uint32_t)|
+|**BYTE**           |unsigned char                                 |
+|**LPBYTE**         |BYTE /*                                       |
+|**BOOL**           |bool                                          |
+|**DWORD_PTR**      |DWORD /*                                      |
 
 You can get more information at [MSDN](https://docs.microsoft.com/en-us/windows/desktop/WinProg/windows-data-types)
