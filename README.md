@@ -97,7 +97,9 @@ You can get more information about such typedefs at [MSDN](https://docs.microsof
 # Conclusion
 
 The Source code of the program was compiled successfully rectifying all errors. The program will run successfully. The whole program is menu driven and is user friendly. This program is developed as easy as possible for the sake of the user.
-        It also has more options for future development. Some of the possible areas for development are:
+
+The program isn't complete in itself and has areas for further improvement. Some possibilities are:
+
 *	Could’ve added Windows API to generate GUI (Which we couldn’t because of lack of adequate time and resources)
 *	Could’ve created playlists in a standard format to make it playable in any standard audio player
 *	Could’ve added volume controls and equalizer
@@ -107,4 +109,3 @@ The Source code of the program was compiled successfully rectifying all errors. 
 *	Could’ve created the code in a better way so as to allow code portability to other users
 
 We are sure we will keep better standards in our future programs and we conclude by hoping that our project will be useful for many enthusiasts.
-
