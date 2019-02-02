@@ -68,11 +68,14 @@ struct Chunk
 The chunk type of the **RIFF** chunk in WAVE file is `WAVE`. The first subchunk is the `fmt` subchunk, which stores the file details such as SampleRate, ByteRate, Number of Channels, Bits per second etc.
 
 The next chunk stores the audio data in the form of coordinates of the sound wave in hex code for each channels. Then there is an optional chunk called **LIST** chunk, which is a major chunk (still inside **RIFF** chunk) which stores audio metadata. People generally say WAVE files cannot be tagged, but there actually is this chunk which allows tagging. Also, recently the ID3v1 tagging format which is used for MP3 format was made available to other audio formats including WAVE. While **LIST/INFO** tags can store metadata only in text form and only up to around 30 characters per tag, which are also only a few (20-30) tags, ID3v1 can hold around 100s of tags and album art too. LIST chunks with type `INFO` are the ones that hold metadata. In the data part of the **LIST/INFO** chunk, there are many sub chunks holding audio metadata. Some are:
-* **INAM** *Title*
-* **IART** *Artist*
-* **ITRK** *Track No.*
-* **ICRD** *Year*
-* **ISFT** *Encoding Software* 
+
+|Chunk ID|Metadata           |
+| ------ | ----------------- |
+|**INAM**|*Title*            |
+|**IART**|*Artist*           |
+|**ITRK**|*Track No.*        |
+|**ICRD**|*Year*             |
+|**ISFT**|*Encoding Software*| 
 
 Another technology which we have used is a 623-dimensionally equidistributed uniform pseudo-random number generator (***PRNG***) named ***Mersenne-Twister*** (*std::mt19937*) in honour of scientist Marin Mersenne. In Computer Science, there’s no means of generating a truly random number on its own. They require a seed or a value which varies, on which the computer performs a set of operations to generate a set of random values. The typical C-method is to seed the **PRNG** with system time. But this method has drawbacks; i.e. when two instances of the software is started simultaneously, the random numbers will be the same. Modern C++ thankfully has many new operators in `<random>` header to overcome this, `std::random_device` copies the state of a random variable of a random hardware connected to the system, which will be more variable than system time. It seeds the **PRNG** with this value. C++ has many PRNGs out of which `std::mt19937` (Mersenne twister with state size of 19937 bytes). We can’t use the std::random_device because its entropy is exhausted quickly and has large overheads.
 
