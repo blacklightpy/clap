@@ -98,13 +98,13 @@ You can get more information about such typedefs at [MSDN](https://docs.microsof
 
 The Source code of the program was compiled successfully rectifying all errors. The program will run successfully. The whole program is menu driven and is user friendly. This program is developed as easy as possible for the sake of the user.
         It also has more options for future development. Some of the possible areas for development are:
-⦁	Could’ve added Windows API to generate GUI (Which we couldn’t because of lack of adequate time and resources)
-⦁	Could’ve created playlists in a standard format to make it playable in any standard audio player
-⦁	Could’ve added volume controls and equalizer
-⦁	Could’ve used different colors in different lines of text in a random fashion to make a better design
-⦁	Could’ve used selectable menu fields instead of commands
-⦁	Could’ve used FOSS libraries to allow portability to Linux and Macintosh systems and also to allow FLAC playback (MP3 is proprietary and also deprecated) as Windows Waveform API only allows playback of Linear PCM WAVE files. This is an absolute necessity because internally any form of audio is converted into LPCM before playback
-⦁	Could’ve created the code in a better way so as to allow code portability to other users
+*	Could’ve added Windows API to generate GUI (Which we couldn’t because of lack of adequate time and resources)
+*	Could’ve created playlists in a standard format to make it playable in any standard audio player
+*	Could’ve added volume controls and equalizer
+*	Could’ve used different colors in different lines of text in a random fashion to make a better design
+*	Could’ve used selectable menu fields instead of commands
+*	Could’ve used FOSS libraries to allow portability to Linux and Macintosh systems and also to allow FLAC playback (MP3 is proprietary and also deprecated) as Windows Waveform API only allows playback of Linear PCM WAVE files. This is an absolute necessity because internally any form of audio is converted into LPCM before playback
+*	Could’ve created the code in a better way so as to allow code portability to other users
 
 We are sure we will keep better standards in our future programs and we conclude by hoping that our project will be useful for many enthusiasts.
 
