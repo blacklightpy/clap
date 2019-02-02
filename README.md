@@ -67,7 +67,7 @@ struct Chunk
 
 The chunk type of the **RIFF** chunk in WAVE file is `WAVE`. The first subchunk is the `fmt` subchunk, which stores the file details such as SampleRate, ByteRate, Number of Channels, Bits per second etc.
 
-The next chunk stores the audio data in the form of coordinates of the sound wave in hex code for each channels. Then there is an optional chunk called **LIST** chunk, which is a major chunk (still inside **RIFF** chunk) which stores audio metadata. People generally say WAVE files cannot be tagged, but there actually is this chunk which allows tagging. Also, recently the ID3v1 tagging format which is used for MP3 format was made available to other audio formats including WAVE. While **LIST/INFO** tags can store metadata only in text form and only up to around 30 characters per tag, which are also only a few (20-30) tags, ID3v1 can hold around 100s of tags and album art too. LIST chunks with type `INFO` are the ones that hold metadata. In the data part of the **LIST/INFO** chunk, there are many sub chunks holding audio metadata. Some are:
+The next chunk stores the audio data in the form of coordinates of the sound wave in hex code for each channels. Then there is an optional chunk called **LIST** chunk, which is a major chunk (still inside **RIFF** chunk) which stores audio metadata. People generally say WAVE files cannot be tagged, but there actually is this chunk which allows tagging. Also, recently the ID3v1 tagging format which is used for MP3 format was made available to other audio formats including WAVE. While **LIST/INFO** tags can store metadata only in text form and only up to around 30 characters per tag, which are also only a few (20-30) tags, ID3v1 can hold around 100s of tags and album art too. LIST chunks with type `INFO` are the ones that hold metadata. In the data part of the **LIST/INFO** chunk, there are many sub chunks holding audio metadata. Some of them are listed below:
 
 |Chunk ID|Metadata           |
 | ------ | ----------------- |
@@ -83,11 +83,11 @@ Audio playback is done by the player class with the help of ***winmm.dll*** plug
 
 Windows API uses certain typedefs to ensure code portability across processor architectures. Some of them used in this program are
 
-* **WORD** int with 2 bytes (short OR uint16_t)
-* **DWORD** double WORD OR int with 4 bytes (uint32_t)
-* **BYTE** unsigned char
-* **LPBYTE** BYTE *
-* **BOOL** bool
-* **DWORD_PTR** DWORD *
+|**WORD**|int with 2 bytes (short OR uint16_t)|
+|**DWORD**|double WORD OR int with 4 bytes (uint32_t)|
+|**BYTE**|unsigned char|
+|**LPBYTE**|BYTE *|
+|**BOOL**|bool|
+|**DWORD_PTR**|DWORD ******|
 
 You can get more information at [MSDN](https://docs.microsoft.com/en-us/windows/desktop/WinProg/windows-data-types)
