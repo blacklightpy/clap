@@ -85,11 +85,11 @@ Windows API uses certain typedefs to ensure code portability across processor ar
 
 |Windows Data Type  |***typedef***                                 |
 | ----------------- | -------------------------------------------- |
-|**WORD**           |int with 2 bytes (short **OR** uint16_t)      |
-|**DWORD**          |double WORD **OR** int with 4 bytes (uint32_t)|
+|**WORD**           |int with exactly 2 bytes                      |
+|**DWORD**          |int with exactly 4 bytes                      |
 |**BYTE**           |unsigned char                                 |
-|**LPBYTE**         |BYTE /*                                       |
+|**LPBYTE**         |unsigned char *                               |
 |**BOOL**           |bool                                          |
-|**DWORD_PTR**      |DWORD /*                                      |
+|**DWORD_PTR**      |**DWORD**  *                                  |
 
 You can get more information at [MSDN](https://docs.microsoft.com/en-us/windows/desktop/WinProg/windows-data-types)
