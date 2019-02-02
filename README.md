@@ -77,3 +77,5 @@ Windows API uses certain typedefs to ensure code portability across processor ar
 * **LPBYTE** BYTE *
 * **BOOL**  bool
 * **DWORD_PTR**  DWORD *
+
+You can get more information at [MSDN](https://docs.microsoft.com/en-us/windows/desktop/WinProg/windows-data-types)
