@@ -1,4 +1,4 @@
-# CLAP - Console Lossless Audio Player
+# CLAP - Console Lossless Audio Player [DOCUMENTATION]
 A CLI based music player for Windows built as part of the CBSE grade 12 project work in C++ w/ Code::Blocks 17.10 IDE
 
 # Introduction
